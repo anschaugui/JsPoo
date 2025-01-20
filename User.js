@@ -16,6 +16,10 @@
         return this.#name;
     }
 
+    set nome (novoNome) {
+        this.#name = novoNome;
+    }
+
     #montaObjUser(){
         return({
             name: this.#name,
@@ -27,8 +31,7 @@
     }
 
     exibirInfos() {
-        const objUser = this.#montaObjUser();
-        return `${objUser.nome}, ${objUser.email}`;
+        return `${this.name}, ${this.email}`;
     }
 }
 
