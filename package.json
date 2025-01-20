@@ -1,21 +1,16 @@
 {
-  "name": "jsorientadoobjetos",
+  "name": "js-oo",
   "version": "1.0.0",
+  "description": "",
   "main": "User.js",
-  "type:":"module",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anschaugui/JsPoo.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anschaugui/JsPoo/issues"
-  },
-  "homepage": "https://github.com/anschaugui/JsPoo#readme",
-  "description": ""
+  "license": "ISC"
 }

@@ -1,25 +1,25 @@
 const user = {
-    name: 'Mariana',
-    email: 'mariana@gmail.com',
-    nascimento: '01/01/1990',
-    role: 'estudante',
-    ativo: true,
-    exibirInfos: function() {
-        console.log(this.name, this.email);        
-    }
+  nome: "Juliana",
+  email: "j@j.com",
+  nascimento: "2024-01-01",
+  role: "estudante",
+  ativo: true,
+  exibirInfos: function () {
+    console.log(this.nome, this.email);
+  },
 };
 
 const admin = {
-    name: 'Carlos',
-    email: 'carlos@gmail.com',
-    nascimento: '01/01/1990',
-    role: 'admin',
-    ativo: true,
-    criarCurso: function() {
-        console.log('Curso criado');
-    }
+  nome: "Mariana",
+  email: "m@m.com",
+  nascimento: "2024-01-01",
+  role: "admin",
+  ativo: true,
+  criarCurso: function() {
+    console.log('curso criado');
+  }
 }
 
-Object.setPrototypeOf(admin, user);
-admin.criarCurso();
-admin.exibirInfos(); // Mariana
+Object.setPrototypeOf(admin, user)
+admin.criarCurso()
+admin.exibirInfos()

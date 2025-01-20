@@ -1,44 +1,51 @@
- export default class User {
-    #name;
-    #email;
-    #nascimento;
-    #role;
-    #ativo;
-    constructor(name, email, nascimento, role, ativo = true) {
-        this.#name = name;
-        this.#email = email;
-        this.#nascimento = nascimento;
-        this.#role = role || 'estudante';
-        this.#ativo = ativo;
-    }
+export default class User {
+  #nome
+  #email
+  #nascimento
+  #role
+  #ativo
+  constructor(nome, email, nascimento, role, ativo = true) {
+    this.#nome = nome
+    this.#email = email
+    this.#nascimento = nascimento
+    this.#role = role || "estudante"
+    this.#ativo = ativo
+  }
 
-    get nome () {
-        return this.#name;
-    }
+  get nome() {
+    return this.#nome
+  }
 
-    set nome (novoNome) {
-        this.#name = novoNome;
-    }
+  get email() {
+    return this.#email
+  }
 
-    #montaObjUser(){
-        return({
-            name: this.#name,
-            email: this.#email,
-            nascimento: this.#nascimento,
-            role: this.#role,
-            ativo: this.#ativo,
-        })
-    }
+  get nascimento() {
+    return this.#nascimento
+  }
 
-    exibirInfos() {
-        return `${this.name}, ${this.email}`;
+  get role() {
+    return this.#role
+  }
+
+  get ativo() {
+    return this.#ativo
+  }
+
+  set nome(novoNome) {
+    if (novoNome === "") {
+      throw new Error('formato do nome não é válido')
     }
+    this.#nome = novoNome
+  }
+
+  exibirInfos() {
+    return `${this.nome}, ${this.email}`
+  }
 }
 
-// const newUser = new User('mariana', 'm@m.com', '01/01/1990')
-// console.log(newUser);
-// console.log(newUser.exibirInfos()) // mariana,;
+const novoUser = new User('Juliana', 'j@j.com', '2024-01-01')
+// console.log(novoUser);
+// console.log(novoUser.exibirInfos());
 
-// console.log(User.prototype.isPrototypeOf(newUser)) // true;
-
-
+// console.log(User.prototype.isPrototypeOf(novoUser));

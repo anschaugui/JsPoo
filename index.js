@@ -1,17 +1,16 @@
-import User from './User.js';
-import Admin from './admin.js';
-import Docente from './docente.js';
+import User from "./User.js"
+import Admin from "./Admin.js"
+import Docente from "./Docente.js"
 
-const novoAdmin = new User('mariana', 'maraian@gmail.com', '01/01/1990');
-console.log(novoAdmin.nome);
-// console.log(novoUser.exibirInfos());
-
-novoUser.nome = 'Julia';
+const novoUser = new User("Juliana", "j@j.com", "2024-01-01")
+console.log(novoUser.exibirInfos());
+novoUser.nome = "Juliana"
 console.log(novoUser.nome);
 
-
-
-// novoUser.#nome = 'Juliana';
-// console.log(novoUser);
+// novoUser.#nome = "Márcia"
+// console.log(novoUser.exibirInfos());
 // console.log(novoUser.#nome);
 
+// const novoAdmin = new Admin("Rodrigo", "r@r.com", "2024-01-01")
+// console.log(novoAdmin.nome);
+// console.log(novoAdmin.exibeNome());

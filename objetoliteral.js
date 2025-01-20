@@ -1,24 +1,22 @@
 const user = {
-    name: 'Mariana',
-    email: 'mariana@gmail.com',
-    nascimento: '01/01/1990',
-    role: 'admin',
-    ativo: true,
-    exibirInfos: function() {
-        console.log(this.name, this.email);
-        
-    }
+  nome: "Juliana",
+  email: "j@j.com",
+  nascimento: "2024-01-01",
+  role: "estudante",
+  ativo: true,
+  exibirInfos: function () {
+    console.log(this.nome, this.email);
+  },
+};
 
-}
-
-// user.exibirInfos(); // Mariana
+// user.exibirInfos()
 
 // const exibir = user.exibirInfos
 // exibir()
 
-const exibir = function () {
-    console.log(this.name, this.nascimento);
+const exibir = function() {
+  console.log(this.nome, this.email);
 }
 
-const exiberNome = exibir.bind(user)
-exiberNome() // Mariana
+const exibirNome = exibir.bind(user);
+exibirNome()
