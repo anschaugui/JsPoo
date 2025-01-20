@@ -16,6 +16,6 @@ const newUser = new User('mariana', 'm@m.com', '01/01/1990')
 // console.log(newUser);
 // console.log(newUser.exibirInfos()) // mariana,;
 
-console.log(User.prototype.isPrototypeOf(newUser)) // true;
+// console.log(User.prototype.isPrototypeOf(newUser)) // true;
 
 
